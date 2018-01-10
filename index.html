@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beer Facts Quiz</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <h1 class="text-center">Super Suds Quiz</h1>
+    <h2 class="text-center col-md-12 align-center">Time Remaining:
+        <span id="counter"></span> seconds
+    </h2>
+    <form class="container" id="target">
+        <div class="row">
+            <div class="question col-md-12 align-center">
+                <p>
+                    <strong>Question #1</strong>: What is the main ingredient in any beer recipe?</p>
+                <br>
+                <label>
+                    <input type="radio" name="one" value="a">Water</label>
+                <br>
+                <label>
+                    <input type="radio" name="one" value="b">Barley</label>
+                <br>
+                <label>
+                    <input type="radio" name="one" value="c">Grains</label>
+                <br>
+                <label>
+                    <input type="radio" name="one" value="d">Hops</label>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="question col-md-12 align-center">
+                <p>
+                    <strong>Question #2</strong>: Of the following styles, what would typically be the lightest colored beer?</p>
+                <br>
+                <label>
+                    <input type="radio" name="two" value="a">Stout</label>
+                <br>
+                <label>
+                    <input type="radio" name="two" value="b">Brown Ale</label>
+                <br>
+                <label>
+                    <input type="radio" name="two" value="c">Porter</label>
+                <br>
+                <label>
+                    <input type="radio" name="two" value="d">Pilsner</label>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="question col-md-12 align-center">
+                <p>
+                    <strong>Question #3</strong>: What is the name of the vessel where the conversion of sugars to alcohol occurs?</p>
+                <br>
+                <label>
+                    <input type="radio" name="three" value="a">Bright Tank</label>
+                <br>
+                <label>
+                    <input type="radio" name="three" value="b">Fermenter</label>
+                <br>
+                <label>
+                    <input type="radio" name="three" value="c">Keg</label>
+                <br>
+                <label>
+                    <input type="radio" name="three" value="d">Randalizer</label>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="question col-md-12 align-center">
+                <p>
+                    <strong>Question #4</strong>: What does the German Reinheitsgebot (beer purity law) state the number of ingredients
+                    of a beer must be?</p>
+                <br>
+                <label>
+                    <input type="radio" name="four" value="a">5</label>
+                <br>
+                <label>
+                    <input type="radio" name="four" value="b">6</label>
+                <br>
+                <label>
+                    <input type="radio" name="four" value="c">4</label>
+                <br>
+                <label>
+                    <input type="radio" name="four" value="d">7</label>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="question col-md-12 align-center">
+                <p>
+                    <strong>Question #5</strong>: Which beer purveyor annually sells the most product?</p>
+                <br>
+                <label>
+                    <input type="radio" name="five" value="a">Miller Coors</label>
+                <br>
+                <label>
+                    <input type="radio" name="five" value="b">Samuel Adams</label>
+                <br>
+                <label>
+                    <input type="radio" name="five" value="c">Sierra Nevada</label>
+                <br>
+                <label>
+                    <input type="radio" name="five" value="d">Anheuser-Busch</label>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2>Answers Correct: <span id="correctness"></span></h2>
+        <h2>Answers that make you too sober to be my friend: <span id="wrongness"></span></h2>
+        
+        <input type="submit">
+        <input type="button" id="resetButton" name="resetButton" value="Reset Game">
+    </form>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src=assets/javascript/app.js></script>
+
+
+</body>
+
+</html>
