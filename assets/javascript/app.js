@@ -10,10 +10,11 @@ var correctAnswer = 0;
 var incorrectAnswer = 0;
 var defaultTime = 60;
 var counter = defaultTime;
+var timer;
 
 var startGame = function () {
     $("#counter").html(counter);
-    var timer = setInterval(function () {
+   timer = setInterval(function () {
         $("#counter").html(--counter);
         if (counter == 0) {
             clearInterval(timer);
@@ -25,11 +26,13 @@ var startGame = function () {
     correctAnswer = 0;
     $("#correctness").html(correctAnswer);
     $("#wrongness").html(incorrectAnswer);
+    $('input[type="radio"]').prop('checked', false);
 }
 $(startGame);
 
 $("#target").submit(function (event) {
-    $(this).find(":checked").each(function (index, input) {
+    clearInterval(timer);
+    $("#target").find(":checked").each(function (index, input) {
         var question = input.name;
         var val = answerKey[question];
         if (input.value === val) {
